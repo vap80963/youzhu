@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.zionstudio.youzhu.ui.CommonTop
+        android:id="@+id/ct_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftBtn="@drawable/back"
+        app:topTitle="隐私设置"
+        app:noRightBtn="true"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itv_myprofile_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:noIcon="true"
+        app:title="谁可以搜索到我"
+        app:msg="所有人可见"
+        />
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itv_sendmsg_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:noIcon="true"
+        app:title="谁可以给我发消息"
+        app:msg="所有人可见"
+        />
+
+</LinearLayout>

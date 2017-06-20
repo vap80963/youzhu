@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            >
+
+    <LinearLayout
+        android:id="@+id/id_switch_tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@color/primaryBlue"
+        >
+
+        <LinearLayout
+            android:id="@+id/view_pager_head"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/id_tab_square_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/id_square_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:text="广场"
+                    android:textColor="@color/white"
+                    android:textSize="17dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_tab_message_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dip"
+                android:saveEnabled="false" >
+
+                <TextView
+                    android:id="@+id/id_message_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="消息"
+                    android:textColor="@color/textGray"
+                    android:textSize="17dip" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<Button-->
+        <!--android:id="@+id/tab_add_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/message"-->
+        <!--/>-->
+
+        <ImageView
+            android:id="@+id/tab_line_igv"
+            android:layout_width="140dp"
+            android:layout_height="1.3dp"
+            android:contentDescription="tab"
+            android:layout_marginLeft="50dp"
+            android:background="@color/white" >
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+
+
+
+</LinearLayout>

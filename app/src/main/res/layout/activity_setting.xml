@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EAEEF1"
+              android:orientation="vertical">
+
+    <com.zionstudio.youzhu.ui.CommonTop
+        android:id="@+id/ct_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftBtn="@drawable/back"
+        app:noRightBtn="true"
+        app:topTitle="设置"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:noIcon="true"
+        app:title="新消息通知"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itemView_safety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:noIcon="true"
+        app:title="账号安全"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itemView_clearCache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:noIcon="true"
+        app:title="清除缓存"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itemView_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:noIcon="true"
+        app:title="关于友助"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itemView_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:noIcon="true"
+        app:title="退出登录"/>
+</LinearLayout>

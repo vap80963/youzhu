@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EAEEF1"
+              android:orientation="vertical">
+
+    <com.zionstudio.youzhu.ui.CommonTop
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:noLeftBtn="true"
+        app:noRightBtn="true"
+        app:topTitle="我"/>
+
+    <include layout="@layout/top_me"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itv_vipcenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:icon="@drawable/vipcenter"
+        app:title="会员中心"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itv_visitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/visitor"
+        app:msg="有新消息"
+        app:msgColor="@color/blue"
+        app:title="访客"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itv_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/collection"
+        app:title="收藏"/>
+
+    <com.zionstudio.youzhu.ui.ItemView
+        android:id="@+id/itv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:icon="@drawable/setting"
+        app:title="设置"/>
+
+</LinearLayout>

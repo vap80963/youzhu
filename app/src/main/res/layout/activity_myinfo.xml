@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EAEEF1"
+              android:orientation="vertical">
+
+    <com.zionstudio.youzhu.ui.CommonTop
+        android:id="@+id/ct_myinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftBtn="@drawable/back"
+        app:noRightBtn="true"
+        app:topTitle="我的信息"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_info_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_touxiang_myinfo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/touxiang2"/>
+
+        <TextView
+            android:id="@+id/tv_name_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_touxiang_myinfo"
+            android:text="鸣人"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_company_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_myinfo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_touxiang_myinfo"
+            android:text="广州科技有限公司"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_position_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_myinfo"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_company_myinfo"
+            android:text="java程序员"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.3"
+        android:background="@android:color/darker_gray"/>
+
+    <include layout="@layout/bottom_myinfo"/>
+</LinearLayout>

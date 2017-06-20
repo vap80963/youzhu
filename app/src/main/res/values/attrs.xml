@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlowLayout">
+        <attr name="width_space" format="dimension"/>
+        <attr name="height_space" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ItemView">
+        <attr name="icon" format="reference"/>
+        <attr name="msg" format="string"/>
+        <attr name="title" format="string"/>
+        <attr name="msgColor" format="color"/>
+        <attr name="noIcon" format="boolean"/>
+        <attr name="noMsg" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CommonTop">
+        <attr name="leftBtn" format="reference" />
+        <attr name="topTitle" format="string" />
+        <attr name="rightBtn" format="string" />
+        <attr name="noRightBtn" format="boolean" />
+        <attr name="noTitle" format="boolean" />
+        <attr name="noLeftBtn" format="boolean" />
+        <attr name="rightBtnRes" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MyImageView">
+        <attr name="src" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.zionstudio.youzhu.ui.CommonTop
+        android:id="@+id/ct_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftBtn="@drawable/back"
+        app:rightBtn="完成"
+        app:topTitle="新建联系人"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/new_contact_head_img"
+            android:layout_width="80dp"
+            android:layout_height="115dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/person1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="6dp"
+            >
+
+            <EditText
+                android:id="@+id/new_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="姓名"
+                />
+            <EditText
+                android:id="@+id/new_contact_cellphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="电话"
+                />
+            <EditText
+                android:id="@+id/new_contact_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="公司"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/new_contact_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="添加住址"
+            />
+        <EditText
+            android:id="@+id/new_contact_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="添加个人资料"
+            />
+        <EditText
+            android:id="@+id/new_contact_assosicate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:hint="添加关联人"
+            />
+        <EditText
+            android:id="@+id/new_contact_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:hint="添加备注"
+            />
+
+        <EditText
+            android:id="@+id/new_contact_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="标签"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@color/textGray"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 给他贴标签"
+                android:textSize="18dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@color/primaryBlue"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHP"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@color/primaryBlue"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前端工程师"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

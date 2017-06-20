@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/fg_message_rclv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_search_msg"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_ll_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="搜索"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/bg_Gray"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/bgKhakiTuhuang"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pengding_msg_pic"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待处理事项"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完善个人资料"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="13dp"
+                android:textColor="@color/textGrayMore"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/user_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:layout_width="68dp"
+                android:layout_height="58dp"
+                android:src="@drawable/touxiang"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="55dp"
+            android:layout_toRightOf="@+id/user_pic"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刘德华"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="明星歌手"
+                    android:textSize="8dp"
+                    android:textColor="@color/textGray"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘德华跟你打了声招呼，快去看看吧"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:singleLine="true"
+                android:textSize="13dp"
+                android:textColor="@color/textGrayMore"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="12:30"
+            android:textColor="@color/textGray"
+            android:textSize="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/blueLogo"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/helper"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="友助手"
+                    android:textSize="16dp"
+                    android:textColor="@color/textYellow"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="友助官方账号"
+                    android:textSize="8dp"
+                    android:textColor="@color/textGray"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新手任务"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="13dp"
+                android:textColor="@color/textGrayMore"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="10:50"
+            android:textColor="@color/textGray"
+            android:textSize="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/recruiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/bgBlueGreen"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:src="@drawable/recruiter_pic"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="55dp"
+            android:layout_toRightOf="@+id/recruiter"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="友助小能人"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="友助官方账号"
+                    android:textSize="8dp"
+                    android:textColor="@color/textGray"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="友助根据您的好友情况给您推荐了可能的人脉..."
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:singleLine="true"
+                android:textSize="13dp"
+                android:textColor="@color/textGrayMore"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="10:49"
+            android:textColor="@color/textGray"
+            android:textSize="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

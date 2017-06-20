@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="8dp"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_me_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_contact_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="联系方式"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_contact_myinfo"
+            android:layout_marginTop="5dp"
+            android:alpha="0.3"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tv_number_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_contact_myinfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="手机: 18826137218"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_email_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_number_myinfo"
+            android:layout_marginLeft="5dp"
+            android:text="邮箱: 402457691@qq.com"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.3"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_fl_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:text="我的标签"
+            android:textSize="18sp"
+            />
+
+        <!--<com.zionstudio.youzhu.ui.FlowLayout-->
+            <!--android:id="@+id/fl_myinfo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_fl_myinfo"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--app:height_space="8dp"-->
+            <!--app:width_space="8dp"/>-->
+
+        <com.liangfeizc.flowlayout.FlowLayout
+            android:id="@+id/fl_myinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_fl_myinfo"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            app:height_space="8dp"
+            app:width_space="8dp"/>
+
+        <ImageView
+            android:id="@+id/iv_add_myinfo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:src="@drawable/addlabel"
+            android:tint="#2C82DF"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.3"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>
